@@ -1,12 +1,8 @@
-const colores = ['bluesky', 'green', 'yellowgreen','pink','purple', 'orange', 'brown', 'black']
+const colores = ['bluesky', 'green', 'yellowgreen','darkblue','purple', 'orange', 'brown', 'black']
 
-function randomColor(length) {  
-   
-    return Math.floor(math.random() * length)
-}
 
 const btn = document.getElementById('btn')
 
 btn.onclick = function () {
-    document.body.style.backgroundColor = colores[randomColor(colores.length)]
+    document.body.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)]
 }
