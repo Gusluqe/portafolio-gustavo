@@ -2,3 +2,7 @@ body {
     background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703647425/pexels-ylanite-koppens-1906440_wbaubj.jpg);
     background-size: cover;
 }    
+
+p {
+    color: rgb(54, 54, 158)
+}
