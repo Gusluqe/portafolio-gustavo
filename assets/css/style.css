@@ -1,14 +1,4 @@
-background-image: "https://img.freepik.com/vector-gratis/fondo-semitono-circulos_23-2148907689.jpg?w=740&t=st=1703640598~exp=1703641198~hmac=b84027e93ce4da0e3f6dfe126fbddf0f91cb30d712e6aa51ab16d991e940f856"
 body {
-    background-color: #222;
-    color: #f0f0f0;
-}
-
-
-
-h1 {
-    color: rgb(0, 255, 106);
-
-}
-
-
+    background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703647425/pexels-ylanite-koppens-1906440_wbaubj.jpg);
+    background-size: cover;
+}    
