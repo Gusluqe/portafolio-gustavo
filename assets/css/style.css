@@ -1,8 +1,29 @@
 body {
-    background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703647425/pexels-ylanite-koppens-1906440_wbaubj.jpg);
+    background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703648463/pexels-photo-577585_bbmifh.webp);
     background-size: cover;
 }    
 
 p {
-    color: rgb(54, 54, 158)
+    color: rgb(250, 250, 250)
+}
+
+h3 {
+    color: rgb(2, 186, 94)
+}
+
+h1 {
+    color:whitesmoke
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 20px
 }
