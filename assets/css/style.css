@@ -1,25 +1,25 @@
 html {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: sans-serif;
-    max-height: 100%;
+    font-size: 16px;          /*fuente a toda la pagina*/
+    line-height: 1.5;         /*difuminado*/
+    font-family: sans-serif;  /*fuente de letra*/
+    max-height: 3096px        /*max megapixeles*/
     
 }
 **::before,
 **::after {
-    box-sizing: inherit;
-    scroll-behavior: smooth;
+    box-sizing: inherit;     /*heredado de html*/
+    scroll-behavior: smooth;   /*scroll tipo*/
 }
 
 body {
     background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif);
-    background-size: cover;        
+    background-size: cover-all;   /*como se comporta el fondo todo cubierto*/     
 }    
 
 .img {
-    align-items: center;    
-    box-shadow: 2px 2px 25px  #509ccefd;
-    border-radius: 20px;
+    align-items: center;     /*items centrados*/
+    box-shadow: 2px 2px 10px  #509ccefd;  /*bordes difuminados*/
+    border-radius: 15px;  /*borde redondeados*/
     
     
 }
@@ -39,45 +39,38 @@ list-style-type: none;
 text-align: center;
 
 }
-header {    
-    width: 100000px;
+.header {    
+    width: 100%;
     background-color: rgba(7, 7, 7, 0.901);
-    height: 70px;
-    box-shadow: 5px 5px 15px 1px #000000;
+    height: 80px;
+    box-shadow: 5px 5px 5px 1px #000000;
     position: fixed;
+    border:1px solid rgba(1, 192, 255, 0);
+    border-radius: 5px;
     
-
-
-    
-    
-
 }
-h2 {
+.h2 {
     color: #000000;
-    padding:30px;
+    padding:70px;
 }
-.navbar {     
+
+.navbar {  
+    background-color: none;   
     height: inherit;
     display: flex;    
     justify-content: flex-start;
     align-items: center;
-    position: fixed;
-    
-    
-
-    
-    
-    
-        
+    position: fixed;          
 }
+
 .logo {
     padding: 20px;
 }
+
 .logo img {
     width: 10px;
     height: 5px;        
 }
-
 
 .menu-list {    
     display: flex;
@@ -100,35 +93,42 @@ h2 {
 }
 
 .mark {
-    font-size: 30px;
+    font-size: 35px;
     background-color: rgb(238, 251, 0);
     border-radius: 10px;
     border: 1px solid rgb(253, 219, 0);
     box-shadow: 5px 5px 35px rgba(229, 255, 0, 0.535);
-    
-
-}
-    
+    padding: 2px
+}    
 
 .text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: rgb(193, 210, 162);
+    font-size: 25px;
+    color: rgba(252, 252, 252, 0.978);
     padding:25px;
+    background-color: #000000bc;
+    border-radius: 20px;
+    box-shadow: 5px 5px 35px #98b5b4;
+    ;
 }
 
 .h3 {
-    color: rgb(2, 186, 94);
-    padding:20px;
-    font-size: 25px;
-    
+    color:rgb(0, 0, 0);
+    max-width: 450px;
+    margin: 30px;  
+    padding: 10px;
+    background-color: rgb(64, 179, 194);
+    box-shadow: 5px 5px 8px #0f7b79;
+    border-radius: px;
+    border: 1px solid #182e5f;    
 }
 
 .title {    
     color:rgb(0, 0, 0);
     max-width: 450px;
-    margin: 30px;  
-    /* padding: 10px; */
+    margin: 30px;
+    font-size: 35px;
+    /* padding: 40px; */
     background-color: rgb(64, 179, 194);
     box-shadow: 5px 5px 68px #0f7b79;
     border-radius: 90px;
@@ -136,7 +136,9 @@ h2 {
     
 }
 
-
+ul {
+    list-style: none;
+}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -151,32 +153,68 @@ h2 {
     border-radius: 20px
 }
 
-.btn-open {
-    background: none;    
-    border: none;
-    font-size: 10px;
-    padding: 5px;
+/* .btn-open {
+    background: blue;    
+    border: 1px solid lightblue;
+    font-size: 0;
+    padding: 0;
     cursor: pointer;
-    color-scheme: blue;
-    width: 100px;
-    height: 100px;
-    
-    
-    
+    width: 150px;
+    height: 150px;    
+    background-size: cover;   
 
+} */
+
+.btn-open1{
+    background-color: rgba(86, 191, 232, 0.685);
+    border-radius: 10px;
+    box-shadow: 1px 5px 33px rgb(44, 151, 186);
+    width: 50p;
+    height: 40p;
+    cursor: pointer;    
 }
 
-.instagram {
-    width: 100%;
-    height: 30px;
-    color: blue;    
+.btn-open2{
+    background-color: rgb(32, 17, 230);
+    border-radius: 10px;
+    box-shadow: 1px 5px 33px rgba(37, 39, 195, 0);
+    width: 50p;
+    height: 40p;
+    cursor: pointer;
     
 }
 
+.btn-open3{
+    background-color: #c02727;
+    border-radius: 10px;
+    box-shadow: 1px 5px 33px rgb(47, 129, 156);
+    width: 50p;
+    height: 40p;
+    cursor: pointer;
+    
+}
 
+.btn-open4{
+    background-color: #3b5998;
+    border-radius: 10px;
+    box-shadow: 1px 5px 33px rgb(47, 129, 156);
+    width: 50p;
+    height: 40p;
+    cursor: pointer;
+    
+}
+
+.txt {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #eeff00;
+}
+
+.audio {
+    padding: 50px;    
+}
 
 .footy {
     color:aliceblue;
     padding:20px;
-
 }
