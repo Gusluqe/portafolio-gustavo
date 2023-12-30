@@ -2,6 +2,8 @@ html {
     font-size: 16px;
     line-height: 1,5;
     font-family: sans-serif;
+    max-width: 270vw;
+    max-height: 270vw;
     
 }
 **::before,
@@ -29,9 +31,14 @@ a {
 }
 
 .conteiner {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
+    /* max-width: 1024px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0  10px;
+} */
+
+list-style-type: none;
+text-align: center;
 }
 header {    
     width: 100%;
@@ -49,6 +56,9 @@ header {
     display: flex;    
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    
+
     
     
     
@@ -57,24 +67,22 @@ header {
 
 .logo img {
     width: 10px;
-    height: 5px;
-    
-    
-    
-
+    height: 5px;        
 }
 
 
 .menu-list {    
     display: flex;
     list-style: none;
-    margin: 0;
+    margin-left: 190px;
     padding: 0;
-    column-gap: 40px;
+    column-gap: 60px;
 }
  
 .menu-link {
+    margin-left:0 ;
     color:#c8dffc
+    
 }
 
 .menu-link:hover {
@@ -123,3 +131,21 @@ h3 {
     border-radius: 20px
 }
 
+.btn-open {
+    background: none;    
+    border: none;
+    font-size: 24px;
+    padding: 0;
+    cursor: pointer;
+    color-scheme: blue;
+    
+    
+
+}
+
+
+
+.footy {
+    color:aliceblue
+
+}
