@@ -1,380 +1,226 @@
-html {    
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: tektur;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  color:#fff    
-}
-  
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  scroll-behavior: smooth; 
-}
+<!DOCTYPE html>
+<html lang="es">
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portafolio avanzado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tektur&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dfc7m5ola/image/upload/v1703774278/foto_g_t7p7cr.jpg">
 
-::-webkit-scrollbar-track {
-  width: 7px;
-}
+</head>
 
-::-webkit-scrollbar-thumb {
-  background: #011535b9;
-  border-radius: 20px
-}
-  
-body {
-  background-color: #000000;
-  margin: 0px;
-    
-}
-
-a {
-  text-decoration: none;
-  color: rgb(58, 58, 245);
-}
-  
-img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-  
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 15px;
-
-}
-
-.text1 {
-  position:absolute;
-  top:15%;
-  left: 12%;
-  display: flex;
-}
-  
-.text2 {
-  position:absolute;
-  top:35%;
-  left: 30%;
-  display: flex;    
-}
-.text3 {
-  position:absolute;
-  top:38%;
-  left: auto;
-  display: flex;
-}
-.animated1 {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-  
-.animated {
-  list-style: none;
-  font-size: 3em;
-  letter-spacing: 5px;
-  transition: 2s;  
-}
-    
-li:hover{
-  filter: blur(70px);
-  opacity: 0;
-}
-  
-.header {
-  position: sticky;
-  top: 0;
-  width: 100%;  
-  height: 74px;
-  box-shadow: 0px 5px 10px 5px #8d99f448;
-  z-index: 3;
-  background-color: rgb(3, 6, 18);    
-}
-
-main {
-  max-width: 1024px;
-}
-  
-.navbar {
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 1px;
-  align-items: center;  
-}
-  
-.logo {    
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  font-family: tektur;       
-}
-
-.logo:hover {
-  transition: 2s;
-  flex-basis: auto;    
-  color: #001eff;   
- 
-}
-  
-.menu-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  column-gap: 20px;
-}
-  
-.menu-link {  
-  color: #fff;
-  transition: color .3s;
-  font-family: tektur;      
-}
-
-  
-.menu-item :hover {
-  color: #2362f7;
-}
-  
-.btn-open {
-  background-color: rgb(255, 255, 254);
-  font-size: 24px;
-  padding: 0;  
-  color: #ffffff;
-}
-
-  
-.services {
-  max-width: auto;
-  margin: 0;
-  padding: 0 10px;    
-  background-size: center;
-  width: image 200px; 
-}
-  
-  
-.services-container {
-    /* display: flex;
-    flex-direction: column;
-    gap: 40px; */
-  left:4em;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    /* auto-fill -> define el número de columnas que caben en el contenedor */
-    /* auto-fit -> define el número de columnas que se ajustan al tamaño de las columnas */
-}
-  
-.services-card {
-  box-shadow: #2d82f043;
-  background-color: #070609;
-  border-radius: 8px;
-  overflow: hidden;
-}
-  
-.p1 {    
-  font-family: tektur;
-}
-
-.h2 {
-  font-family: tektur;
-  max-width: 1024px;
-  margin: 10px auto;
-  padding:  50px;
-  color:#fff;
-  left: 4em;
-}  
-  
-.div2 {
-  border-radius: 100%;
-  border: 1px solid #000000;
-} 
-.title {
-  left: 4em;
-}
-.title-article { 
-  font-size: 60px;
-  font-family: dancing script;
-  left: 4em;
-}
-
-.title-article1 {
-  margin-left: 120px; 
-  font-size: 80px;
-  font-family: dancing script;
-  left: 4em;  
-}
-
-.title-article2 {
-  font-family: inherit;
-}    
-     
-.text{
-  border: 1px solid red;
-  left: 4em;
-  border-color: 1px solid red;
-}
-  
-.services-img {
-  border-color: aquamarine;
-  border-radius: 15px;
-  width: 100%;
-  height: 200px;
-}
-  
-.services-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-  
-.services-info {
-  background-color: #070609;
-  padding: 20px;
-}
-  
-.services-info h3,
-.services-info p {
-  margin: 0;
-}
-
-  
-  /* Media Queries */
-  /* Max 0 - 768px <- Diseño Responsivo (desktop)*/
-  
-@media screen and (max-width: 768px) {
-  body {
-    background-color: rgb(3, 11, 14);
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a class="logo" href='https://drive.google.com/file/d/1aFlblPlWFhRjoJCIeryoCujFnujLrVPj/view?usp=drive_link' target="blank">CV</a>
+      <div id="navMenu" class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href='#home'>Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href='#about'>Sobre mi</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href='#Educacion'>Educacion</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href='#Habilidades'>Habilidades</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href='/'>Coming soon</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href='#contact'>Contacto</a>
+          </li>         
+        </ul>
+      </div>  
+        <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
+          <box-icon name='menu'>
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/>
+          </box-icon>
+        </button>       
       
-  }
-  
-  .menu {
-    position: fixed;
-    top: 64px;
-    left: -100%;
-    background-color: lightsalmon;
-    width: 85%;
-    height: calc(100vh - 64px);
-    padding: 30px 40px;
-    transition: left .5s;
+             
+    </nav>
+    <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
+      <box-icon name='menu'></box-icon>
+    </button>
+  </header>
+
+  <main id="home">
+    <div class="text1">      
+      <ul class="animated1">
+       <li class="animated">H</li>
+       <li class="animated">o</li>
+       <li class="animated">l</li>
+       <li class="animated">a</li>
+       <li class="animated">,</li>
+       <li class="animated">&#128075</li>
+      </ul>
+    </div>    
+    <div class="text2">
+      <ul class="animated1">
+        <li class="animated">S</li>
+        <li class="animated">o</li>
+        <li class="animated">y</li>
+        <li class="animated">&nbsp</li>
+        <li class="animated">G</li>
+        <li class="animated">u</li>
+        <li class="animated">s</li>
+        <li class="animated">t</li>
+        <li class="animated">a</li>
+        <li class="animated">v</li>
+        <li class="animated">o</li>
+        <li class="animated">,</li>
+      </ul>        
+    </div>    
+    <br><br><br><br><br><br><br><br> <br><br>  
+
+
+    <section class='services'>       
+      <div class="div9">
+       <h1 id="interes" class="animatedText">Soy desarrolador web Full-Stack</h1>
+      </div>
+      <br>
+      <div class='services-container'>        
+        <article class='services-card'>
+          <div class='services-img'>
+            <img src='https://source.unsplash.com/random/700x700/?developer' alt='img' width="200">
+          </div>
+          <div class='services-info'>
+            <h3 class="h3">Desarrollo Web</h3>
+            <p class="p1">Fluida variedad de lenguajes, desde los fundamentales como HTML, CSS y JavaScript hasta
+              lenguajes de servidor como Node.js y Python. Su experiencia en frameworks como React y Express.js e hace
+              versátil en proyectos de gran envergadura.</p>
+          </div>
+        </article>
+
+        <article class='services-card'>
+          <div class='services-img'>
+            <img src='https://source.unsplash.com/random/2920x1080/?web-design?next=1' alt='img' width="200">
+          </div>
+          <div class='services-info'>
+            <h3 class="h3">Diseño Web</h3>
+            <p class="p1">Soy experto en la creación de interfaces de usuario atractivas y funcionales, asegurándose de
+              que los sitios sean altamente receptivos y brinden una experiencia de usuario óptima en diferentes
+              dispositivos.</p>
+          </div>
+        </article>
+
+        <article class='services-card'>
+          <div class='services-img'>
+            <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif' alt='img' width="200">
+          </div>
+          <div class='services-info'>
+            <h3 class="h3">Responsabilidad</h3>
+            <p class="p1">Soy muy responsable en el desarrollo web, 
+             apasionado por la tecnología, con habilidades técnicas sólidas 
+             y un enfoque integral para el ciclo de vida de desarrollo de un proyecto web.
+            </p>
+          </div>
+        </article>        
+    </section>
+
+    <section id="about">
+      <h2 class="h2">>Sobre mí</h2>
+      <br><br>
+      <div class="text">
+        <p class="text">Bienvenido a mi portafolio, soy una persona pro-activa,
+          Me gusta mucho viajar, Me gusta el El desarrollo web,
+          lo cual es un campo dinámico y en constante evolución que se ocupa de la
+          creación y mantenimiento de sitios y aplicaciones web.
+          además tengo conocimientos de redes y hadware y software
+          Me gusta mucho la tecnologia y todo lo relacionado a ella.</p>
+        <p class="text">Busco pertenecer a una empresa que me otrogue
+          Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica
+        </p></div>
+    </section>
+    <br>
+
+    <section id="Educacion">
+      <h2 class="h2">>Educación</mark></h2>
+      <p class="text">Actualmente me encuento estudiando en Academlo desarrollo web Full-Stack y
+        ciencias de la computacion,además.          
+        Siempre he tenido una gran interés por el desarrollo web.
+      </p>
+      <br>
+    </section>
+
+    <section class="title" id="Habilidades"> 
+      <h3 class="title">>Tecnologías Desarrolladas</h3>
+       <ul>
+         <li class="text">HTML5/CSS3 &#128433;</li>
+         <li class="text">JavaScript &#128433;</li>
+         <li class="text">Software de Windows &#128433;</li>
+         <li class="text">Técnico en redes &#128433;</li>
+         <li class="text">Sistema D.O.S &#128433;</li>
+       </ul>
+      <br>
+      <h3 class="h3">
+        <inst>>Habilidades Blandas</inst>
+      </h3>
+       <ul>
+         <li class="text">>Excelente Trabajo en equipo</li>
+         <li class="text">>Comunicacion</li>
+         <li class="text">>Resolucion de problemas</li>
+         <li class="text">>Personal a cargo</li>
+         <li class="text">>Liderazgo</li>
+       </ul>
+      <br>
+      <section id="contact">
+        <h2 class="text">>Redes Sociales</h2>
+      <div class="div">
+        <a class="dezeer" href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
+          <button class="btn-open1" type="abrir linkedin">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQdJREFUSEu9lYENwjAMBN1NYBJgEmASYBJgEmAS2AR6UoxMmhInoViqKmjjs/2ftJOJo5s4v3gBexF5hOtaUpQHcBGRpUkK6Nz/BpoND+AZspz6DjYRiG5uIsKzZJQAeHcWulmMwOjsY4SlAFulwtbRCA92fC2AGMb4dsEIc334K4DmU73eef8OYK60SbvYEcHUOVXF2EUkv38xdjPgGKql6m0A8Z9usmYA1dPFynjZdjUJgOo5KogY4NLLLtIzhxGxWRBZR8RRoGMD5tbLIzIgxsZdw61Xqm1syfYnrODWYG69PMKlnJsCJPWqBbj1qgWMiTzQqxagTsrq1QLIfi5Tm8e1qOSlF4zKTBkdx8y8AAAAAElFTkSuQmCC" />
+          </button>
+        </a>
+
+        <a class="kedin"
+          href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
+          <button class="btn-open2" type="abrirLinkedin">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlcEJAkEMRd92oh60De3Es+BBsAAbEETwLFaiZXgQ1EZEI7NLDHGHnXHxoDlmZ/5LfiZsQctRtKyPB+gBN+DyCbgFrIFpEF4C81yIBgyAoxHsANccSAzQzbXKWrQBJqHiFTDLqV7uekPuhyGfcsU9gHiuo3xJdflhsPHgFWQ7OAOlmIjLDCT2gAhJSH4EyFlbzO6RWOhkKsB2pDUFXnWTAoiNRsQF8oxUgBYZA1tF1dYmA+x+vJtdMsB2rh/BizOpFv0B1UJ5i+a9vh+aQWxLG3//yk+/cZV1F+5TgkgZkxvc1AAAAABJRU5ErkJggg==" />
+          </button>
+        </a>
+
+        <a class="instagram" href='https://www.instagram.com/gus_luqe?igsh=OGQ5ZDc2ODk2ZA==' target="_blank" rel="noopener noreferrer">
+            <button class="btn-open3" type="abrirInstagram">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXJJREFUSEvFlc1NRDEMhGeb4ApUAly4UwASVAJI9AGUwQmohJ8DdypY3oc8T1aSzWaFnjaX/YntscdjZ6WFz2rh+NobwJGkK0knkk47VX7E3auku8nHv2eXVgUEfggLHHDuHZIhCWyfJsPbbFwCYPweQc926A9+L2F/nZMqAcicCo5b5TYAL4OaH0kXreRKALKn1Fb2AJPp4XT/Nn1/lHQu6VnSV/zvKmb/EmAdjpTpQ1AqK5tNIveSviUdBP8AYA8Df2cEACeCoxIaaIXdRLVzsEiESue42wCsKAfPbfAddFhp7mEXIAfrNd2Ka9kPA0AJVGxSFT37FwDc04MWRQZHECiKM0QRxlaRFcSnpzQ3Ge6zpHcGIKueTAme989WgGpQonTvG5bfZwQ1LVlZ1aC2VgW8l5mNrCWrKlNcDZqNvC6q9bsBKdOY56L54HiA8q4fWdfYZEU1V0XeP+jf3PcA/Gagsurt2NuTOdLUIZvFK/gFHzRoGdyhE9oAAAAASUVORK5CYII=" />
+            </button>
+        </a>
+
+        <a class="facebook"
+          href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
+            <button class="btn-open4" type="abrirFacebook">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALxJREFUSEvtlNENgzAMBR+bsEkZpUxCO0lhkraTlFHakxIpQhArViL1A3+BhN45Z5NOjatrnK+/A/SSJkmDJJ5XScvPwu3IRMkJCPzsBM2SxhoAuqT7bVUDPIMaAK/QNYqyVaIIPWii7jnvKdELwDlqzLIAcVsIeiRphL/DO7oOVVkAQq9Gm1ldNQBZXRaA1byEEzDgOGSURC0A3IpSO+kWVRvyCSi6rs8ZmNdKc0VmB3sfWH+yK9R7XbtgX1iPKhmVuQM1AAAAAElFTkSuQmCC" />
+            </button>
+        </a>
+          <p>>Música Para Rejalarse</p>
+      </div>
+      <section >
+       <div>
+         <audio class="audio" controls>
+          <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
+        </audio> 
+      </section>
+      </div>            
+  </main>
+  <footer class="footy">
+    <p><small>&copy; Portafolio de Gustavo Luque 2024. Todos los derechos reservados.</small></p>
+  </footer>
+  <script>
+    btnOpen.onclick = function () {
+      navMenu.classList.toggle('show-menu')
     }
-  
-  .show-menu {
-    left: -1;
-  }
-  
-  .menu-list {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  
-  .menu-link {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-    
-  .main {
-    font: color #fff;
-  }
+  </script>
+</body>
 
-  .p1 {    
-    font-family: tektur;  
-  }
-
-  .h3 {    
-    font-family: tektur;  
-  }
-
-  .div2 {
-    border-radius: 20px;
-  }
-  .header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    left: 100%;
-    background-color: #0A0B13;
-    box-shadow: 0px 5px 10px 5px #0A0B13;
-    z-index: 3;
-  } 
-
-  .btn-open:hover {
-    color: #2362f7;
-    transition: 3s;
-
-    filter: saturate(75px);
-    
-  } 
-  .text1 {
-    position:absolute;
-    top: 8%;
-    left: 0%;
-    display: flex;
-  }
-
-  .text2 {
-    position:absolute;
-    top: 16%;
-    left: 7%;
-    display: flex;
-  } 
-
-  
-
-  .animated {
-    list-style: none;
-    font-size: 2em;
-    letter-spacing: 5px;
-    transition: 2s;
-  
-  }
-
-  .div9 {
-    top: 15%;
-  }
-  
-  .menu-link2 {  
-    color: #fff;
-    transition: color .3s;
-    font-family: tektur;    
-  }
-       
-}
-
-.audio {
-  border: 1px solid green;
-   
-
-  
-}
-
-
-.footy {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-  
-  /* @media (min-width: 650px) {
-    .services-container {
-      flex-wrap: wrap;
-      flex-direction: row;
-    }
-  
-    .services-card {
-      width: 300px;
-    }
-  } */
-  
-  /* Min 768px -> para arriba (mobile first) */
-@media screen and (min-width: 768px) {
-  .btn-open {
-    display: none;
-  }
-}
+</html>
