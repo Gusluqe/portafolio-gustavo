@@ -88,19 +88,19 @@ li:hover{
   filter: blur(70px);
   opacity: 0;
 }
-.spam{
+.textA{
   display: block;
   font-family: tektur;
   letter-spacing: 1px;
   white-space: nowrap;
   border-right: 4px solid; 
   color:rgb(0, 26, 255);
-  width: 29ch;
+  width: 24ch;
   animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
   overflow: hidden; 
   
 }
-.span2 {  
+.textA2 {  
   margin: 25%;  
   padding: 0%;  
 } 
@@ -274,7 +274,7 @@ main {
   
 @media screen and (max-width: 768px) {
   body {
-    background-color: rgb(3, 11, 14);
+    background-color: #000000;
       
   }
   
@@ -344,7 +344,7 @@ main {
   .text2 {
     position:absolute;
     top: 20%;
-    left: 8%;
+    left: 4%;
     display: flex;
   } 
 
@@ -367,9 +367,22 @@ main {
     transition: color .3s;
     font-family: tektur;    
   }
-  .span2 {  
-    margin: 10%;  
+  .textA2 {     
+    margin: 5%;  
     padding-top: 50%;
+    
+  }
+  .textA{
+    display: block;
+    font-family: tektur;
+    font-size: 17px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    border-right: 4px solid; 
+    color:rgb(0, 26, 255);
+    width: 25ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
+    overflow: hidden; 
     
   } 
        
