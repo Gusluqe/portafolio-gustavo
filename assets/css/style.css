@@ -23,8 +23,9 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #011535b9;
-  border-radius: 20px
+  background: rgb(9, 16, 45);
+  border-radius: 20px;
+  
 }
   
 body {
@@ -78,7 +79,7 @@ img {
   
 .animated {
   list-style: none;
-  font-size: 3em;
+  font-size: 40px;
   letter-spacing: 5px;
   transition: 2s;  
 }
@@ -87,7 +88,29 @@ li:hover{
   filter: blur(70px);
   opacity: 0;
 }
+.spam{
+  display: block;
+  font-family: tektur;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  border-right: 4px solid; 
+  color:rgb(0, 26, 255);
+  width: 29ch;
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
+  overflow: hidden; 
   
+}
+.span2 {  
+  margin: 25%;  
+  padding: 0%;  
+} 
+
+@keyframes typing {
+  from {width: 0 }
+}
+@keyframes blink {
+  50% {border-color: transparent ;}
+}
 .header {
   position: sticky;
   top: 0;
@@ -111,7 +134,7 @@ main {
 }
   
 .logo {    
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffffff;
   font-family: tektur;       
@@ -308,21 +331,20 @@ main {
   .btn-open:hover {
     color: #2362f7;
     transition: 3s;
-
     filter: saturate(75px);
     
   } 
   .text1 {
     position:absolute;
-    top: 8%;
+    top: 10%;
     left: 0%;
     display: flex;
   }
 
   .text2 {
     position:absolute;
-    top: 16%;
-    left: 7%;
+    top: 20%;
+    left: 8%;
     display: flex;
   } 
 
@@ -345,6 +367,11 @@ main {
     transition: color .3s;
     font-family: tektur;    
   }
+  .span2 {  
+    margin: 10%;  
+    padding-top: 50%;
+    
+  } 
        
 }
 
