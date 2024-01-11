@@ -89,7 +89,7 @@ li:hover{
   white-space: nowrap;
   border-right: 4px solid; 
   color:rgb(0, 26, 255);
-  width: 25ch;
+  width: 26ch;
   animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
   overflow: hidden; 
   
