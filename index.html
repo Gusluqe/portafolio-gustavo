@@ -4,20 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi portafolio avanzado</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Portafolio Gustavo Luque</title>    
   <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tektur&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="https://res.cloudinary.com/dfc7m5ola/image/upload/v1703774278/foto_g_t7p7cr.jpg">
-
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
   <header class="header">
+     <!-- NAVEGACION -->
     <nav class="navbar container">      
       <a class="logo" href='https://drive.google.com/file/d/1aFlblPlWFhRjoJCIeryoCujFnujLrVPj/view?usp=drive_link' target="blank">Dowload CV</a>           
       <div id="navMenu" class="menu">
@@ -41,29 +40,23 @@
             <a class="menu-link" href='#contact'>Contacto</a>
           </li>         
         </ul>
-      </div>  
-        <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
-          <box-icon name='menu'>
-           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/>
-          </box-icon>
-        </button>       
-      
-             
-    </nav>
-    <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
-      <box-icon name='menu'></box-icon>
-    </button>
-  </header>
+      </div>
+      <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
+        <i class='bx bx-menu nav-icon'></i>
+      </button>              
+    </nav>    
+  </header>  
 
   <main id="home">
     <div class="text1">      
       <ul class="animated1">
+       <li class="animated">&#128075</li>
+       <li class="animated">&nbsp</li>
        <li class="animated">H</li>
        <li class="animated">o</li>
        <li class="animated">l</li>
        <li class="animated">a</li>
-       <li class="animated">,</li>
-       <li class="animated">&#128075</li>
+       <li class="animated">,</li>       
       </ul>
     </div>    
     <div class="text2">
@@ -79,17 +72,16 @@
         <li class="animated">a</li>
         <li class="animated">v</li>
         <li class="animated">o</li>
-        <li class="animated">,</li>
+        <li class="animated">.</li>
       </ul>        
     </div>    
     <div class="textA2">
-     <h2 class="textA">>Desarollador web Full-Stack</h2>
+     <h2 class="textA">>Desarollador web Full-Stack.</h2>
     </div>    
     <section class='services'>       
-      <div class="div9">
-       
-      </div>
-      <br>
+      <div class="div9"> 
+       <h1 class="h2" id="home">>Home</h1>
+      </div>      
       <div class='services-container'>        
         <article class='services-card'>
           <div class='services-img'>
@@ -130,9 +122,8 @@
     </section>
 
     <section id="about">
-      <h2 class="h2">>Sobre mí</h2>
-      <br><br>
-      <div class="text">
+      <h2 class="h2">>Sobre mí</h2>      
+      <div>
         <p class="text">Bienvenido a mi portafolio, soy una persona pro-activa,
           Me gusta mucho viajar, Me gusta el El desarrollo web,
           lo cual es un campo dinámico y en constante evolución que se ocupa de la
@@ -142,20 +133,19 @@
         <p class="text">Busco pertenecer a una empresa que me otrogue
           Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica
         </p></div>
-    </section>
-    <br>
+    </section>    
 
     <section id="Educacion">
       <h2 class="h2">>Educación</mark></h2>
       <p class="text">Actualmente me encuento estudiando en Academlo desarrollo web Full-Stack y
-        ciencias de la computacion,además.          
+        ciencias de la computacion, además          
         Siempre he tenido una gran interés por el desarrollo web.
       </p>
       <br>
     </section>
 
     <section class="title" id="Habilidades"> 
-      <h3 class="title">>Tecnologías Desarrolladas</h3>
+      <h3 class="h2">>Tecnologías Desarrolladas</h3>
        <ul>
          <li class="text">HTML5/CSS3 &#128433;</li>
          <li class="text">JavaScript &#128433;</li>
@@ -165,7 +155,7 @@
        </ul>
       <br>
       <h3 class="h3">
-        <inst>>Habilidades Blandas</inst>
+        <div class="h2">>Habilidades Blandas</div>
       </h3>
        <ul>
          <li class="text">>Excelente Trabajo en equipo</li>
@@ -175,43 +165,44 @@
          <li class="text">>Liderazgo</li>
        </ul>
       <br>
-      <section id="contact">
+    <section id="contact">
+      <article>
+
         <h2 class="text">>Redes Sociales</h2>
-      <div class="div">
-        <a class="dezeer" href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
-          <button class="btn-open1" type="abrir linkedin">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQdJREFUSEu9lYENwjAMBN1NYBJgEmASYBJgEmAS2AR6UoxMmhInoViqKmjjs/2ftJOJo5s4v3gBexF5hOtaUpQHcBGRpUkK6Nz/BpoND+AZspz6DjYRiG5uIsKzZJQAeHcWulmMwOjsY4SlAFulwtbRCA92fC2AGMb4dsEIc334K4DmU73eef8OYK60SbvYEcHUOVXF2EUkv38xdjPgGKql6m0A8Z9usmYA1dPFynjZdjUJgOo5KogY4NLLLtIzhxGxWRBZR8RRoGMD5tbLIzIgxsZdw61Xqm1syfYnrODWYG69PMKlnJsCJPWqBbj1qgWMiTzQqxagTsrq1QLIfi5Tm8e1qOSlF4zKTBkdx8y8AAAAAElFTkSuQmCC" />
-          </button>
-        </a>
+          <div class="div">
+           <a class="dezeer" href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
+             <button class="btn-open1" type="abrir linkedin">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQdJREFUSEu9lYENwjAMBN1NYBJgEmASYBJgEmAS2AR6UoxMmhInoViqKmjjs/2ftJOJo5s4v3gBexF5hOtaUpQHcBGRpUkK6Nz/BpoND+AZspz6DjYRiG5uIsKzZJQAeHcWulmMwOjsY4SlAFulwtbRCA92fC2AGMb4dsEIc334K4DmU73eef8OYK60SbvYEcHUOVXF2EUkv38xdjPgGKql6m0A8Z9usmYA1dPFynjZdjUJgOo5KogY4NLLLtIzhxGxWRBZR8RRoGMD5tbLIzIgxsZdw61Xqm1syfYnrODWYG69PMKlnJsCJPWqBbj1qgWMiTzQqxagTsrq1QLIfi5Tm8e1qOSlF4zKTBkdx8y8AAAAAElFTkSuQmCC" />
+             </button>
+            </a>
 
-        <a class="kedin"
-          href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
-          <button class="btn-open2" type="abrirLinkedin">
-           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlcEJAkEMRd92oh60De3Es+BBsAAbEETwLFaiZXgQ1EZEI7NLDHGHnXHxoDlmZ/5LfiZsQctRtKyPB+gBN+DyCbgFrIFpEF4C81yIBgyAoxHsANccSAzQzbXKWrQBJqHiFTDLqV7uekPuhyGfcsU9gHiuo3xJdflhsPHgFWQ7OAOlmIjLDCT2gAhJSH4EyFlbzO6RWOhkKsB2pDUFXnWTAoiNRsQF8oxUgBYZA1tF1dYmA+x+vJtdMsB2rh/BizOpFv0B1UJ5i+a9vh+aQWxLG3//yk+/cZV1F+5TgkgZkxvc1AAAAABJRU5ErkJggg==" />
-          </button>
-        </a>
+            <a class="kedin" href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
+              <button class="btn-open2" type="abrirLinkedin">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlcEJAkEMRd92oh60De3Es+BBsAAbEETwLFaiZXgQ1EZEI7NLDHGHnXHxoDlmZ/5LfiZsQctRtKyPB+gBN+DyCbgFrIFpEF4C81yIBgyAoxHsANccSAzQzbXKWrQBJqHiFTDLqV7uekPuhyGfcsU9gHiuo3xJdflhsPHgFWQ7OAOlmIjLDCT2gAhJSH4EyFlbzO6RWOhkKsB2pDUFXnWTAoiNRsQF8oxUgBYZA1tF1dYmA+x+vJtdMsB2rh/BizOpFv0B1UJ5i+a9vh+aQWxLG3//yk+/cZV1F+5TgkgZkxvc1AAAAABJRU5ErkJggg==" />
+              </button>
+            </a>
 
-        <a class="instagram" href='https://www.instagram.com/gus_luqe?igsh=OGQ5ZDc2ODk2ZA==' target="_blank" rel="noopener noreferrer">
-            <button class="btn-open3" type="abrirInstagram">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXJJREFUSEvFlc1NRDEMhGeb4ApUAly4UwASVAJI9AGUwQmohJ8DdypY3oc8T1aSzWaFnjaX/YntscdjZ6WFz2rh+NobwJGkK0knkk47VX7E3auku8nHv2eXVgUEfggLHHDuHZIhCWyfJsPbbFwCYPweQc926A9+L2F/nZMqAcicCo5b5TYAL4OaH0kXreRKALKn1Fb2AJPp4XT/Nn1/lHQu6VnSV/zvKmb/EmAdjpTpQ1AqK5tNIveSviUdBP8AYA8Df2cEACeCoxIaaIXdRLVzsEiESue42wCsKAfPbfAddFhp7mEXIAfrNd2Ka9kPA0AJVGxSFT37FwDc04MWRQZHECiKM0QRxlaRFcSnpzQ3Ge6zpHcGIKueTAme989WgGpQonTvG5bfZwQ1LVlZ1aC2VgW8l5mNrCWrKlNcDZqNvC6q9bsBKdOY56L54HiA8q4fWdfYZEU1V0XeP+jf3PcA/Gagsurt2NuTOdLUIZvFK/gFHzRoGdyhE9oAAAAASUVORK5CYII=" />
-            </button>
-        </a>
+            <a class="instagram" href='https://www.instagram.com/gus_luqe?igsh=OGQ5ZDc2ODk2ZA==' target="_blank" rel="noopener noreferrer">
+              <button class="btn-open3" type="abrirInstagram">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXJJREFUSEvFlc1NRDEMhGeb4ApUAly4UwASVAJI9AGUwQmohJ8DdypY3oc8T1aSzWaFnjaX/YntscdjZ6WFz2rh+NobwJGkK0knkk47VX7E3auku8nHv2eXVgUEfggLHHDuHZIhCWyfJsPbbFwCYPweQc926A9+L2F/nZMqAcicCo5b5TYAL4OaH0kXreRKALKn1Fb2AJPp4XT/Nn1/lHQu6VnSV/zvKmb/EmAdjpTpQ1AqK5tNIveSviUdBP8AYA8Df2cEACeCoxIaaIXdRLVzsEiESue42wCsKAfPbfAddFhp7mEXIAfrNd2Ka9kPA0AJVGxSFT37FwDc04MWRQZHECiKM0QRxlaRFcSnpzQ3Ge6zpHcGIKueTAme989WgGpQonTvG5bfZwQ1LVlZ1aC2VgW8l5mNrCWrKlNcDZqNvC6q9bsBKdOY56L54HiA8q4fWdfYZEU1V0XeP+jf3PcA/Gagsurt2NuTOdLUIZvFK/gFHzRoGdyhE9oAAAAASUVORK5CYII=" />
+              </button>
+            </a>
 
-        <a class="facebook"
-          href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
-            <button class="btn-open4" type="abrirFacebook">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALxJREFUSEvtlNENgzAMBR+bsEkZpUxCO0lhkraTlFHakxIpQhArViL1A3+BhN45Z5NOjatrnK+/A/SSJkmDJJ5XScvPwu3IRMkJCPzsBM2SxhoAuqT7bVUDPIMaAK/QNYqyVaIIPWii7jnvKdELwDlqzLIAcVsIeiRphL/DO7oOVVkAQq9Gm1ldNQBZXRaA1byEEzDgOGSURC0A3IpSO+kWVRvyCSi6rs8ZmNdKc0VmB3sfWH+yK9R7XbtgX1iPKhmVuQM1AAAAAElFTkSuQmCC" />
-            </button>
-        </a>
-          <p>>Música Para Rejalarse</p>
-      </div>
-      <section >
-       <div>
-         <audio class="audio" controls>
-          <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
-        </audio> 
-      </section>
-      </div>            
+            <a class="facebook" href='https://www.facebook.com/gustavo.luque.92?mibextid=ZbWKwL' target="_blank" rel="noopener noreferrer">
+              <button class="btn-open4" type="abrirFacebook">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALxJREFUSEvtlNENgzAMBR+bsEkZpUxCO0lhkraTlFHakxIpQhArViL1A3+BhN45Z5NOjatrnK+/A/SSJkmDJJ5XScvPwu3IRMkJCPzsBM2SxhoAuqT7bVUDPIMaAK/QNYqyVaIIPWii7jnvKdELwDlqzLIAcVsIeiRphL/DO7oOVVkAQq9Gm1ldNQBZXRaA1byEEzDgOGSURC0A3IpSO+kWVRvyCSi6rs8ZmNdKc0VmB3sfWH+yK9R7XbtgX1iPKhmVuQM1AAAAAElFTkSuQmCC" />
+              </button>
+            </a>
+              <p>>Música Para Rejalarse</p>
+      
+      
+       
+            <audio class="audio" controls>
+             <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
+            </audio>       
+          </div>
+        </article>  
+      </section>          
   </main>
   <footer class="footy">
     <p><small>&copy; Portafolio de Gustavo Luque 2024. Todos los derechos reservados.</small></p>
