@@ -29,8 +29,7 @@ html {
 }
   
 body {
-  background: #000000;
-  margin: 0;
+  background: #353b48;
     
 }
 
@@ -78,7 +77,7 @@ img {
   transition: 2s;  
 }
     
-li:hover{
+.animated:hover{
   filter: blur(70px);
   opacity: 0;
 }
@@ -89,11 +88,12 @@ li:hover{
   white-space: nowrap;
   border-right: 4px solid; 
   color:rgb(0, 26, 255);
-  width: 26ch;
+  width: 25ch;
   animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
   overflow: hidden; 
   
 }
+
 
 .textA2 {  
   margin: 25%;  
@@ -111,10 +111,11 @@ li:hover{
   top: 0;
   width: 100%;  
   height: 74px;
-  box-shadow:  10px #8d99f448;
+  box-shadow: 10px #2f3640;
   z-index: 3;
-  background-color: rgb(15, 32, 100);    
+  background-color: #2f3640;    
 }
+
 
   
 .navbar {
@@ -133,7 +134,7 @@ li:hover{
 }
 
 .logo:hover {
-  transition: 2s;
+  transition: 1s;
   flex-basis: auto;    
   color: #001eff;   
  
@@ -156,18 +157,11 @@ li:hover{
 
   
 .menu-link:hover {
-  transition: 2s;
+  transition: 1s;
   flex-basis: auto;    
-  color: #001eff;
+  color: #001adb;
 }
   
-.btn-open {
-  background: none;
-  border: none;
-  font-size: 24px;
-  padding: 0;
-  cursor: pointer;
-}
 
 
 
@@ -204,10 +198,21 @@ li:hover{
   margin: 10px auto;
   padding:  50px;
   color:#fff;
+  left: 3em;
+  letter-spacing: 1px;   
+} 
+.h22 {
+  font-family: tektur;
+  max-width: 1024px;
+  
+  padding:  50px;
+  color:#fff;
   left: 4em;
   letter-spacing: 1px;
-  
-}  
+  margin: 0 auto;
+  width: fit-content;
+
+}   
   
 .div2 {
   left: 25%;
@@ -237,8 +242,15 @@ li:hover{
   padding: 10px;
   border-radius: 10px;
   letter-spacing: 1px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
+.music{
+  margin: 0 auto;
+  width: fit-content;
+
+}
 
   
 .services-img {
@@ -266,6 +278,31 @@ li:hover{
   margin: 0;
 }
 
+.div {
+  margin: 0 auto;
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+.div a {  
+  font-size: 38px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(115, 138, 160, 0.496);
+  transition: all .4s ease-in-out;
+}
+
+.div a:hover {
+  color: rgb(0, 89, 255);
+  transform:scale(1.2)
+}
   
   /* Media Queries */
   /* Max 0 - 768px <- Diseño Responsivo (desktop)*/
@@ -274,18 +311,20 @@ li:hover{
   body {
     background-color: #041d3a;
       
-  }
+  } 
   
   .menu {
     position: fixed;
     top: 64px;
     left: 100%;
-    background-color: rgba(115, 138, 160, 0.899);
+    background-color: #5A5A66;
     width: 85%;
     height: calc(50vh - 64px);
     padding: 30px 40px;
     transition: left .5s;
     border-radius: 10px;
+    background-image: url(https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif);
+
    
   }
   
@@ -323,17 +362,12 @@ li:hover{
     top: 0;
     width: 100%;
     left: 100%;
-    background-color: #2458a1;
-    box-shadow: 0px 5px 10px 5px #2458a1;
+    background-color: #142466;
+    box-shadow: 0px 5px 10px 5px #142466;
     z-index: 3;
   } 
 
-  .btn-open:hover {
-    color: #2362f7;
-    transition: 3s;
-    filter: saturate(75px);
-    
-  } 
+  
   .text1 {
     position:absolute;
     top: 10%;
@@ -379,40 +413,44 @@ li:hover{
     letter-spacing: 1px;
     white-space: nowrap;
     border-right: 4px solid; 
-    color:rgb(0, 26, 255);
+    color:rgb(163, 171, 246);
     width: 26ch;
     animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
     overflow: hidden; 
     
   } 
-       
-}
-
-.audio {
-  border: 1px solid green;
-   
-
+  .div {
+    margin: 0 auto;
+    min-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+  }
+  .div a {  
+    font-size: 38px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(115, 138, 160, 0.496);
+    transition: all .4s ease-in-out;
+  }
   
-}
+  .div a:hover {
+    transform:scale(1.2)
+  }
+}       
 
 
 .footy {
   font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-size: 10px;
+   
 }
-  
-  /* @media (min-width: 650px) {
-    .services-container {
-      flex-wrap: wrap;
-      flex-direction: row;
-    }
-  
-    .services-card {
-      width: 300px;
-    }
-  } */
-  
-  /* Min 768px -> para arriba (mobile first) */
 @media screen and (min-width: 768px) {
   .btn-open {
     display: none;
