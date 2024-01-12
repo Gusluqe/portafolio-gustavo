@@ -495,7 +495,7 @@ img {
     left: 100%;
     background-color: #5A5A66;
     width: 85%;
-    height: calc(50vh - 64px);
+    height: calc(50vh - 74px);
     padding: 30px 40px;
     transition: left .5s;
     border-radius: 10px;
@@ -605,6 +605,7 @@ img {
     min-width: 400px;
     display: flex;
     justify-content: space-around;
+    margin-top: 10%;
     
     
   }
