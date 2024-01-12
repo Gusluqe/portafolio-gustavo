@@ -3,23 +3,23 @@ const skillsTech = document.querySelector('.skills-tech')
 
 const skills = [
   {
-    path: 'assets/img/bash.svg',
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/bash_herg5r.svg',
     name: 'Bash',
   },
   {
-    path: 'assets/img/vsc.svg',
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068793/vsc_m9yr7b.svg',
     name: 'VS Code',
   },
   {
-    path: 'assets/img/html.svg',
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/html_q6pvb3.svg',
     name: 'HTML',
   },
   {
-    path: 'assets/img/css.svg',
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705069308/logo-css-3-2048_dkollb.png',
     name: 'CSS',
   },
   {
-    path: 'assets/img/javascript.svg',
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/javascript_u1zqf9.svg',
     name: 'JavaScript',
   }
 ]
