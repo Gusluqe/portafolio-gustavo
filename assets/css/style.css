@@ -1,335 +1,512 @@
-<!DOCTYPE html>
-<html lang='es'>
-  <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Portafolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css'>
-    <link rel='stylesheet' href='assets/css/style.css'>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav container">
+:root {
+  --bg-body: #222;
+  --bg-alt: #1f1f1f;
+  --txt-body: #f0f0f0;
+  --family-body: monospace;
 
-        <a class="logo" href='https://drive.google.com/file/d/1aFlblPlWFhRjoJCIeryoCujFnujLrVPj/view?usp=drive_link'>GL<span>.</span></a>
+  --header-height: 60px;
+  --primary-color: cyan;
+}
 
-        <div class="nav-menu">
-          <button class="btn-close" type='button' aria-label="close menu">
-            <i class='bx bx-x'></i>
-          </button>
+.light {
+  --bg-body: #fff;
+  --bg-alt: #f2f2f2;
+  --txt-body: #222;
+  --primary-color: blueviolet;
+}
 
-          <ul class="menu-list">
-            <li class="list-item active">
-              <a class="list-link" href='#hero'>Inicio</a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href='#about'>Sobre mi</a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href='#skills'>Habilidades</a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href='#proyects'>Proyectos</a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href='#contact'>Contacto</a>
-            </li>
-          </ul>
-        </div>
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-        <div class="actions">
-          <button class="btn-theme" type='button' aria-label="change theme">
-            <i class='bx bxs-moon'></i>
-          </button>
-          <button class="btn-open" type='button' aria-label="show menu">
-            <i class='bx bx-menu'></i>
-          </button>
-        </div>
-      </nav>
-    </header>
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-    <main class='main'>
-      <section id="hero" class='hero'>
-        <div class='container'>
-          <h1 class='hero-title'>Gustavo Luque<span>.</span></h1>
-          <p class='hero-description'>Desarrollador <span></span></p>
-        </div>
-      </section>
+body {
+  background-color: var(--bg-body);
+  color: var(--txt-body);
+  font-family: var(--family-body);
+  font-size: 1.8rem;
+  margin: 0;
+}
 
-      <section id="about" class='section about'>
-        <h2 class='section-title'>Sobre Mi</h2>
-        <div class='container'>
-          <div class='about-info'>
-            <p>>Bienvenido a mi portafolio, me considero una persona pro-activa,
-              Me gusta mucho viajar, Me gusta el El desarrollo web,
-              lo cual es un campo dinámico y en constante evolución que se ocupa de la
-              creación y mantenimiento de sitios y aplicaciones web.
-              además tengo conocimientos de redes y hadware y software
-              Me gusta mucho la tecnologia y todo lo relacionado a ella.</p>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-            <p>>Busco pertenecer a una empresa que me otrogue
-              Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica.</p>
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: var(--txt-body);
+}
+
+/* Clases reutilizables */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  margin-top: var(--header-height);
+}
+
+.section {
+  padding: 95px 0 80px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title::before {
+  content: '// ';
+  color: var(--primary-color);
+}
+
+/* Navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 5;
+  background-color: var(--bg-alt);
+}
+
+.nav {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.btn-close {
+  display: none;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+/* de 0 a 768px */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - var(--header-height));
+    padding: 60px 20px 40px;
+    background-color: #333;
+    transition: left .5s ease-in-out;
+  }
+
+  .show-menu {
+    left: 0;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    display: block;
+  }
+
+  .menu-list {
+    flex-direction: column;
+  }
+}
+
+.list-link {
+  font-size: 18px;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.list-item.active .list-link {
+  color: var(--primary-color);
+}
 
 
-            <button class="btn-contact" type='button'>Contactame <i class='bx bx-right-arrow-alt'></i>
-            
+.list-link:hover {
+  color: var(--primary-color);
+}
 
-          <!-- </div>
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-          <img class="about-img" src='https://icon-library.com/images/dev-icon/dev-icon-8.jpg' alt='logo' width="img">
-        </div> -->
-      </section>
+button.btn-open {
+  font-size: 28px;
+}
 
-      <section id="skills" class='section skills'>
-        <h2 class='section-title'>Mis Habilidades</h2>
-        <div class='container'>
-          <div class='skills-container'>
-            <div class='skills-tech'></div>
-            <ul class='skills-soft'>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Comunicación clara</span>
-              </li>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Responsabilidad</span>
-              </li>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Resolución de problemas</span>
-              </li>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Gestión del tiempo</span>
-              </li>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Trabajo en equipo</span>
-              </li>
-              <li class='skill-item'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                  <path d="M9 12l2 2l4 -4"></path>
-                </svg>
-                <span>Adaptación al cambio</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- GALERIA HOME INFORMACION IMPORTANTE    -->
-      <section class='services'>       
-        <div class="div9">                 
-        </div>      
-        <div class='services-container'>        
-          <article class='services-card'>
-            <div class='services-img'>
-              <img src='https://source.unsplash.com/random/700x700/?developer' alt='img' width="200">
-            </div>
-            <div class='services-info'>
-              <h3 class="h3">Desarrollo Web</h3>
-              <p class="p1">Fluida variedad de lenguajes, desde los fundamentales como HTML, CSS y JavaScript hasta
-                lenguajes de servidor como Node.js y Python. Su experiencia en frameworks como React y Express.js e hace
-                versátil en proyectos de gran envergadura.</p>
-            </div>
-          </article>
+@media (min-width: 768px) {
+  .btn-open {
+    display: none;
+  }
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 45px;
+  line-height: 1;
+}
+
+.hero-title span {
+  color: var(--primary-color);
+}
+
+.hero-description {
+  font-size: 30px;
+}
+
+.hero-description span {
+  color: var(--primary-color);
+}
+
+/* About */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.about-info div {
+  margin: 0 auto;
+}
+
+.about-img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about .container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-img {
+    display: block;
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+  .div {
+    margin: 0 auto;
+    max-width: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .audio { 
   
-          <article class='services-card'>
-            <div class='services-img'>
-              <img src='https://source.unsplash.com/random/700x700/?web-desing' alt='img' width="200">
-            </div>
-            <div class='services-info'>
-              <h3 class="h3">Diseño Web</h3>
-              <p class="p1">Soy experto en la creación de interfaces de usuario atractivas y funcionales, asegurándose de
-                que los sitios sean altamente receptivos y brinden una experiencia de usuario óptima en diferentes
-                dispositivos.</p>
-            </div>
-          </article>       
+    margin: 0;
+  }
+}  
+
+.btn-contact {
+  font-size: inherit;
+  color: var(--primary-color);
+}
+
+.btn-contact i {
+  transform: translateX(0);
+  transition: transform .3s;
+}
+
+.btn-contact:hover i {
+  transform: translateX(10px);
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background-color: var(--bg-alt);
+  border-radius: 10px;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+.skill img {
+  width: 50px;
+  height: auto;
+}
+
+.skill h3 {
+  font-size: 17px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.skills-soft {
+  background-color: var(--bg-alt);
+  border-radius: 10px;
+  padding: 1.5em 1em;
+  list-style: none;
+  margin: 0;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skill-item svg {
+  width: 25px;
+  height: auto;
+  color: var(--primary-color);
+}
+
+/* Testimonials */
+.swiper {
+  padding: 1.5em;
+}
+
+.swiper .card {
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.swiper .swiper-slide {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  opacity: 0.2;
+  background: var(--bg-alt);
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.swiper .swiper-nav-wrapper {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  padding-top: 3em;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev {
+  top: 0;
+  top: auto;
+  left: auto;
+  right: auto;
+  position: relative !important;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next:after,
+.swiper .swiper-nav-wrapper .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-next {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-prev i,
+.swiper .swiper-nav-wrapper .swiper-button-next i {
+  font-size: 38px;
+  color: var(--txt-body);
+}
+
+.swiper-pagination {
+  margin: 0;
+  padding: 0;
+  position: relative !important;
+  display: block;
+  width: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+  background: var(--txt-body) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary-color) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  padding: 0 1.5em;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.5);
+}
+
+/* imagenes random */
+.services {
+  max-width: 1024px;
+  margin: 0;
+  padding: 0 10px;    
+  background-size: center;  
+  width: image 200px; 
+}
   
-          <article class='services-card'>
-            <div class='services-img'>
-              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif' alt='img' width="200">
-            </div>
-            <div class='services-info'>
-              <h3 class="h3">Responsabilidad</h3>
-              <p class="p1">Soy muy responsable en el desarrollo web, 
-               apasionado por la tecnología, con habilidades técnicas sólidas 
-               y un enfoque integral para el ciclo de vida de desarrollo de un proyecto web.
-              </p>
-            </div>
-          </article>        
-      </section>
-
-      <section id='proyects' class='section projects'>
-        <h2 class='section-title'>Proyectos</h2>        
-          <div class="div">               
-             <a class='bx bxl-github' href='https://github.com/Gusluqe/test-gen34' target="_blank" rel="noopener noreferrer">
-             </a>      
-                        
-             <a class='bx bx-desktop' href='https://app.netlify.com/sites/portafoliogustavo/' target="_blank" rel="noopener noreferrer">
-             </a>      
-          </div>
-      </section>
-
-      <section id='testimonials' class='section testimonials'>
-        <h2 class='section-title'>Testimonios</h2>
-
-        <div class='container'>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class='card'>
-                  <div class='card-img'>
-                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/images_1_f3vz5u.jpg' alt='profile'>
-                  </div>
-                  <p>"Trabajar con Gustavo en el desarrollo de una página web fue una experiencia excepcional."</p>
-                  <h3>María Rodríguez Diseñadora Gráfica</h3>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class='card'>
-                  <div class='card-img'>
-                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705016139/63c6ce721d927f1f4b3b843c_1x1_Banner_-_6_tips_para_tus_fotos_de_marca_personal_mw0rbm.jpg' alt='profile'>
-                  </div>
-                  <p>"Su habilidad para entender y materializar nuestras ideas en un diseño web impactante fue impresionante."
-                    </p>
-                  <h3>Angeles Mendez, Diseñadora Gráfica</h3>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class='card'>
-                  <div class='card-img'>
-                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/Perfil-Profesional-09359-1-819x1024_o1qmmc.webp' alt='profile'>
-                  </div>
-                  <p>"Gustavo demostró un alto nivel de profesionalismo, cumpliendo con los plazos de entrega y superando nuestras expectativas."
-                    .</p>
-                  <h3>Héctor Alvarez, Diseñador web</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class='swiper-nav-wrapper'>
-              <div class="swiper-button-prev">
-                <i class='bx bx-chevron-left'></i>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next">
-                <i class='bx bx-chevron-right'></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-       <!-- BARRA DE CONTACTO -->
-       <section id='contact' class='section contact'>
-          <h2 class='section-title'>Contacto</h2>
-          <div class="div">
-      
-            <a class='bx bxl-deezer' href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
-               
-            </a>
+ /* imagenes random  */
+.services-container {    
+  left:4em;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
   
-            <a class='bx bxl-linkedin' href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
-              
-            </a>
-  
-            <a class='bx bxl-instagram' href='https://www.instagram.com/gus_luqe?igsh=OGQ5ZDc2ODk2ZA==' target="_blank" rel="noopener noreferrer">
-              
-            </a>
-  
-            <a class='bx bxl-facebook' href='https://www.facebook.com/gustavo.luque.92?mibextid=ZbWKwL' target="_blank" rel="noopener noreferrer">
-              
-            </a>
-  
-            <a class='bx bx-envelope' href='mailto:gus_luqe@live.com.ar' target="_blank" rel="noopener noreferrer">              
-            </a>
-  
-          
-        </section>
-        <section class='section contact'>
-          <h2 class='section-title'>Música Para relajarse</h2>
-          <div class="audio">
-        
-           <audio controls>
-            <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
-          </div>
-        </section>
-    </main>
-    <footer class="footy">
-      <p>&copy; Portafolio de Gustavo Luque 2024. Todos los derechos reservados.</small></p>
-    </footer>
+.services-card {  
+  background-color: var(--bg-alt);;
+  border-radius: 8px;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      const typed = new Typed('.hero-description span', {
-        strings: [
-          '<b>Front-end</b>', '<b>Back-end</b>', '<b>Full-stack</b>'
-        ],
-        typeSpeed: 60,
-        backSpeed: 60,
-        loop: true,
-        cursorChar: '|',
-      })
-    </script>
+/* CONTACTO */
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js'></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        dragEvents: true,
-        loop: true,
-        autoHeight: false,
-        centeredSlides: true,
-        slidesPerView: 1,
+.div {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-around;
+}
+.div a {  
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #010202;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(3, 194, 242, 0.496);
+  transition: all .4s ease-in-out;
+} 
 
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          }
-        },
+.div5 a {  
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #010202;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(115, 138, 160, 0.496);
+  transition: all .4s ease-in-out;
 
-        pagination: {
-          el: '.swiper-pagination',
-        },
+}  
+.div a:hover {
+  color: cyan;
+  transform:scale(1.2)
+}
+.div5 a:hover {
+  color: rgb(0, 89, 255);
+  transform:scale(1.2)
+}
+.footy {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+   
+}
 
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }
-      })
-    </script>
 
-    <script src="assets/js/index.js"></script>
-  </body>
-</html>
+
+.audio { 
+  margin: 0 auto;
+  width: fit-content;
+}
