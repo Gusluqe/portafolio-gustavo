@@ -463,6 +463,8 @@ img {
   max-width: 1024px;
   display: flex;
   justify-content: space-around;
+  padding-top:10% ;
+  
 }
 .div a {  
   font-size: 35px;
