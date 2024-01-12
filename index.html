@@ -1,298 +1,335 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Portafolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | Gustavo Luque</title>    
-  <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tektur&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="https://res.cloudinary.com/dfc7m5ola/image/upload/v1703774278/foto_g_t7p7cr.jpg">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+        <a class="logo" href='https://drive.google.com/file/d/1aFlblPlWFhRjoJCIeryoCujFnujLrVPj/view?usp=drive_link'>GL<span>.</span></a>
 
-<body>
-  <header class="header">
-     <!-- NAVEGACION -->
-    <nav class="navbar container">      
-      <a class="logo" href='https://drive.google.com/file/d/1aFlblPlWFhRjoJCIeryoCujFnujLrVPj/view?usp=drive_link' target="blank">Dowload CV</a>           
-      <div id="navMenu" class="menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link" href='#home'>Home</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href='#about'>Sobre mi</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href='#Educacion'>Educacion</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href='#Habilidades'>Habilidades</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href='#testimonio'>Testimonios</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href='#contact'>Contacto</a>
-          </li>         
-        </ul>
-      </div>
-      <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
-        <i class='bx bx-menu nav-icon'></i>
-      </button>              
-    </nav>    
-  </header>
+        <div class="nav-menu">
+          <button class="btn-close" type='button' aria-label="close menu">
+            <i class='bx bx-x'></i>
+          </button>
 
-  <main id="home">       
-    <div class="text1">      
-      <ul class="animated1">       
-       <li class="animated">&nbsp</li>
-       <li class="animated">></li>
-       <li class="animated">H</li>
-       <li class="animated">o</li>
-       <li class="animated">l</li>
-       <li class="animated">a</li>
-       <li class="animated">,</li>
-       <li class="animated">&#128075</li>            
-      </ul>
-    </div>    
-    <div class="text2">
-      <ul class="animated1">
-        <li class="animated">></li>
-        <li class="animated">S</li>
-        <li class="animated">o</li>
-        <li class="animated">y</li>
-        <li class="animated">&nbsp</li>
-        <li class="animated">G</li>
-        <li class="animated">u</li>
-        <li class="animated">s</li>
-        <li class="animated">t</li>
-        <li class="animated">a</li>
-        <li class="animated">v</li>
-        <li class="animated">o</li>
-        <li class="animated">.</li>
-      </ul>
+          <ul class="menu-list">
+            <li class="list-item active">
+              <a class="list-link" href='#hero'>Inicio</a>
+            </li>
+            <li class="list-item">
+              <a class="list-link" href='#about'>Sobre mi</a>
+            </li>
+            <li class="list-item">
+              <a class="list-link" href='#skills'>Habilidades</a>
+            </li>
+            <li class="list-item">
+              <a class="list-link" href='#proyects'>Proyectos</a>
+            </li>
+            <li class="list-item">
+              <a class="list-link" href='#contact'>Contacto</a>
+            </li>
+          </ul>
+        </div>
 
-    </div>    
-    <div class="textA2">
-     <h2 class="textA">>Desarollador web Full-Stack.</h2>
-    </div>
-     
-    <section class='services'>       
-      <div class="div9"> 
-       <h1 class="h2" id="home">>Home</h1>        
-      </div>      
-      <div class='services-container'>        
-        <article class='services-card'>
-          <div class='services-img'>
-            <img src='https://source.unsplash.com/random/700x700/?developer' alt='img' width="200">
-          </div>
-          <div class='services-info'>
-            <h3 class="h3">>Desarrollo Web</h3>
-            <p class="p1">>Fluida variedad de lenguajes, desde los fundamentales como HTML, CSS y JavaScript hasta
-              lenguajes de servidor como Node.js y Python. Su experiencia en frameworks como React y Express.js e hace
-              versátil en proyectos de gran envergadura.</p>
-          </div>
-        </article>
+        <div class="actions">
+          <button class="btn-theme" type='button' aria-label="change theme">
+            <i class='bx bxs-moon'></i>
+          </button>
+          <button class="btn-open" type='button' aria-label="show menu">
+            <i class='bx bx-menu'></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-        <article class='services-card'>
-          <div class='services-img'>
-            <img src='https://source.unsplash.com/random/2920x1080/?web-design?next=1' alt='img' width="200">
-          </div>
-          <div class='services-info'>
-            <h3 class="h3">>Diseño Web</h3>
-            <p class="p1">>Soy experto en la creación de interfaces de usuario atractivas y funcionales, asegurándose de
-              que los sitios sean altamente receptivos y brinden una experiencia de usuario óptima en diferentes
-              dispositivos.</p>
-          </div>
-        </article>       
+    <main class='main'>
+      <section id="hero" class='hero'>
+        <div class='container'>
+          <h1 class='hero-title'>Gustavo Luque<span>.</span></h1>
+          <p class='hero-description'>Desarrollador <span></span></p>
+        </div>
+      </section>
 
-        <article class='services-card'>
-          <div class='services-img'>
-            <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif' alt='img' width="200">
-          </div>
-          <div class='services-info'>
-            <h3 class="h3">>Responsabilidad</h3>
-            <p class="p1">>Soy muy responsable en el desarrollo web, 
-             apasionado por la tecnología, con habilidades técnicas sólidas 
-             y un enfoque integral para el ciclo de vida de desarrollo de un proyecto web.
-            </p>
-          </div>
-        </article>        
-    </section>
+      <section id="about" class='section about'>
+        <h2 class='section-title'>Sobre Mi</h2>
+        <div class='container'>
+          <div class='about-info'>
+            <p>>Bienvenido a mi portafolio, me considero una persona pro-activa,
+              Me gusta mucho viajar, Me gusta el El desarrollo web,
+              lo cual es un campo dinámico y en constante evolución que se ocupa de la
+              creación y mantenimiento de sitios y aplicaciones web.
+              además tengo conocimientos de redes y hadware y software
+              Me gusta mucho la tecnologia y todo lo relacionado a ella.</p>
 
-    <section id="about">
-      <h2 class="h2">>Sobre mí</h2>      
-      <div>
-        <p class="text">>Bienvenido a mi portafolio, me considero una persona pro-activa,
-          Me gusta mucho viajar, Me gusta el El desarrollo web,
-          lo cual es un campo dinámico y en constante evolución que se ocupa de la
-          creación y mantenimiento de sitios y aplicaciones web.
-          además tengo conocimientos de redes y hadware y software
-          Me gusta mucho la tecnologia y todo lo relacionado a ella.</p>
-        <p class="text">>Busco pertenecer a una empresa que me otrogue
-          Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica
-        </p></div>
-    </section>    
+            <p>>Busco pertenecer a una empresa que me otrogue
+              Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica.</p>
 
-    <section id="Educacion">
-      <h2 class="h2">>Educación</mark></h2>
-      <p class="text">>Actualmente me encuento estudiando en Academlo desarrollo web Full-Stack y
-        ciencias de la computacion, además          
-        Siempre he tenido una gran interés por el desarrollo web.
-      </p>
-      <br>
-    </section>
 
-    <section class="title" id="Habilidades"> 
-      <h3 class="h22">>Tecnologías Desarrolladas</h3>
-       <ul>
-         <li class="text">>HTML5/CSS3 &#128433;</li>
-         <li class="text">>JavaScript &#128433;</li>
-         <li class="text">>Software de Windows &#128433;</li>
-         <li class="text">>Técnico en redes &#128433;</li>
-         <li class="text">>Sistema D.O.S &#128433;</li>
-       </ul>
-      <br>
-      <h3 class="h3">
-        <div class="h22">>Habilidades Blandas</div>
-      </h3>
-       <ul>
-         <li class="text">>Excelente Trabajo en equipo</li>
-         <li class="text">>Comunicacion</li>
-         <li class="text">>Resolucion de problemas</li>
-         <li class="text">>Personal a cargo</li>
-         <li class="text">>Liderazgo</li>
-       </ul>
-      <br>
-      <h2><center>>Proyectos</center></h2> 
-    <section id="Proyecto">
-      <div class="div">               
-         <a class='bx bxl-github' href='https://github.com/Gusluqe/test-gen34' target="_blank" rel="noopener noreferrer">
-         </a>      
-                    
-         <a class='bx bx-desktop' href='https://app.netlify.com/sites/portafoliogustavo/' target="_blank" rel="noopener noreferrer">
-         </a>      
-     </div>
-    <section id="contact">
-      <div id="testimonio" class="contenedor">
-        <h2>>Testimonios</h2>
-        <hr>
-        <input type="radio" name="slides" id="radio1" chedcked>
-        <input type="radio" name="slides" id="radio2">
-        <input type="radio" name="slides" id="radio3">
-        <ul class="slides">
-          <li class="slide">
-            <p>
-              <q>
-                "Trabajar con Gustavo en el desarrollo de una página web fue una experiencia excepcional."
-                María Rodríguez Diseñadora Gráfica</q>
-                 
-            
-              <span class="author">
-               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/images_umutxc.jpg' >
-              </span>
-            </p>
-          </li>
-          <li class="slide">
-            <p>
-              <q>             
-                "Su habilidad para entender y materializar nuestras ideas en un diseño web impactante fue impresionante."
-                 Angeles Mendez, Diseñadora Gráfica</q>
-                
-              <span class="author">
-               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/images_1_f3vz5u.jpg'>
-              </span>
-            </p>
-          </li>
-          <li class="slide">
-            <p>
-              <q>
-                
-                
-                
-                "Gustavo demostró un alto nivel de profesionalismo, cumpliendo con los plazos de entrega y superando nuestras expectativas."
-                HéCtor Alvarez, Diseñador web</q>
-                
-            
-              <span class="author">
-               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/Perfil-Profesional-09359-1-819x1024_o1qmmc.webp'>
-              </span>
-            </p>
-          </li>
-        </ul>
-        <div class="navigation">
-          <label for="radio1" id="radioSelect1"></label>
-          <label for="radio2" id="radioSelect2"></label>
-          <label for="radio3" id="radioSelect3"></label>
-        </div>       
-      </div>
-      <div class="redes"> 
-          <br>
-          <br>
-          <br>
-          <br> 
+            <button class="btn-contact" type='button'>Contactame <i class='bx bx-right-arrow-alt'></i>
             
 
-        <h2 class="text">>Redes Sociales</h2>
-      </div>  
-        <br>
-        <br>
+          <!-- </div>
+
+          <img class="about-img" src='https://icon-library.com/images/dev-icon/dev-icon-8.jpg' alt='logo' width="img">
+        </div> -->
+      </section>
+
+      <section id="skills" class='section skills'>
+        <h2 class='section-title'>Mis Habilidades</h2>
+        <div class='container'>
+          <div class='skills-container'>
+            <div class='skills-tech'></div>
+            <ul class='skills-soft'>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Comunicación clara</span>
+              </li>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Responsabilidad</span>
+              </li>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Resolución de problemas</span>
+              </li>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Gestión del tiempo</span>
+              </li>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Trabajo en equipo</span>
+              </li>
+              <li class='skill-item'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span>Adaptación al cambio</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- GALERIA HOME INFORMACION IMPORTANTE    -->
+      <section class='services'>       
+        <div class="div9">                 
+        </div>      
+        <div class='services-container'>        
+          <article class='services-card'>
+            <div class='services-img'>
+              <img src='https://source.unsplash.com/random/700x700/?developer' alt='img' width="200">
+            </div>
+            <div class='services-info'>
+              <h3 class="h3">Desarrollo Web</h3>
+              <p class="p1">Fluida variedad de lenguajes, desde los fundamentales como HTML, CSS y JavaScript hasta
+                lenguajes de servidor como Node.js y Python. Su experiencia en frameworks como React y Express.js e hace
+                versátil en proyectos de gran envergadura.</p>
+            </div>
+          </article>
+  
+          <article class='services-card'>
+            <div class='services-img'>
+              <img src='https://source.unsplash.com/random/700x700/?web-desing' alt='img' width="200">
+            </div>
+            <div class='services-info'>
+              <h3 class="h3">Diseño Web</h3>
+              <p class="p1">Soy experto en la creación de interfaces de usuario atractivas y funcionales, asegurándose de
+                que los sitios sean altamente receptivos y brinden una experiencia de usuario óptima en diferentes
+                dispositivos.</p>
+            </div>
+          </article>       
+  
+          <article class='services-card'>
+            <div class='services-img'>
+              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif' alt='img' width="200">
+            </div>
+            <div class='services-info'>
+              <h3 class="h3">Responsabilidad</h3>
+              <p class="p1">Soy muy responsable en el desarrollo web, 
+               apasionado por la tecnología, con habilidades técnicas sólidas 
+               y un enfoque integral para el ciclo de vida de desarrollo de un proyecto web.
+              </p>
+            </div>
+          </article>        
+      </section>
+
+      <section id='proyects' class='section projects'>
+        <h2 class='section-title'>Proyectos</h2>        
+          <div class="div">               
+             <a class='bx bxl-github' href='https://github.com/Gusluqe/test-gen34' target="_blank" rel="noopener noreferrer">
+             </a>      
+                        
+             <a class='bx bx-desktop' href='https://app.netlify.com/sites/portafoliogustavo/' target="_blank" rel="noopener noreferrer">
+             </a>      
+          </div>
+      </section>
+
+      <section id='testimonials' class='section testimonials'>
+        <h2 class='section-title'>Testimonios</h2>
+
+        <div class='container'>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class='card'>
+                  <div class='card-img'>
+                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/images_1_f3vz5u.jpg' alt='profile'>
+                  </div>
+                  <p>"Trabajar con Gustavo en el desarrollo de una página web fue una experiencia excepcional."</p>
+                  <h3>María Rodríguez Diseñadora Gráfica</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class='card'>
+                  <div class='card-img'>
+                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705016139/63c6ce721d927f1f4b3b843c_1x1_Banner_-_6_tips_para_tus_fotos_de_marca_personal_mw0rbm.jpg' alt='profile'>
+                  </div>
+                  <p>"Su habilidad para entender y materializar nuestras ideas en un diseño web impactante fue impresionante."
+                    </p>
+                  <h3>Angeles Mendez, Diseñadora Gráfica</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class='card'>
+                  <div class='card-img'>
+                    <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1705011544/Perfil-Profesional-09359-1-819x1024_o1qmmc.webp' alt='profile'>
+                  </div>
+                  <p>"Gustavo demostró un alto nivel de profesionalismo, cumpliendo con los plazos de entrega y superando nuestras expectativas."
+                    .</p>
+                  <h3>Héctor Alvarez, Diseñador web</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class='swiper-nav-wrapper'>
+              <div class="swiper-button-prev">
+                <i class='bx bx-chevron-left'></i>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <i class='bx bx-chevron-right'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+       <!-- BARRA DE CONTACTO -->
+       <section id='contact' class='section contact'>
+          <h2 class='section-title'>Contacto</h2>
           <div class="div">
-           <a class='bx bxl-deezer' href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
-             
+      
+            <a class='bx bxl-deezer' href='https://lofigenerator.com/' target="_blank" rel="noopener noreferrer">
+               
             </a>
-
+  
             <a class='bx bxl-linkedin' href='https://www.linkedin.com/in/gustavo-luque-b37a4872?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
               
             </a>
-
+  
             <a class='bx bxl-instagram' href='https://www.instagram.com/gus_luqe?igsh=OGQ5ZDc2ODk2ZA==' target="_blank" rel="noopener noreferrer">
               
             </a>
-
+  
             <a class='bx bxl-facebook' href='https://www.facebook.com/gustavo.luque.92?mibextid=ZbWKwL' target="_blank" rel="noopener noreferrer">
               
             </a>
-
+  
             <a class='bx bx-envelope' href='mailto:gus_luqe@live.com.ar' target="_blank" rel="noopener noreferrer">              
-            </a>           
-
-              
-                  
-          </div>
+            </a>
+  
           
-
-          <div class="music">
-            <br>
-            <br>
-             <br>
-            <p class="h2" >>Música Para Rejalarse</p>
-            
-      
-      
-       
-            <audio  controls>
-              <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
-            </audio>
-
+        </section>
+        <section class='section contact'>
+          <h2 class='section-title'>Música Para relajarse</h2>
+          <div class="audio">
+        
+           <audio controls>
+            <source src="https://res.cloudinary.com/dfc7m5ola/video/upload/v1703913479/Gustavo_Cerati_-_Puente_Official_Video_-mc_zwt0p0.mp3" type="audio/mpeg">
           </div>
-          <br>
-         
-      </section>          
-  </main>
-  <footer class="footy">
-    <p>&copy; Portafolio de Gustavo Luque 2024. Todos los derechos reservados.</small></p>
-  </footer>
-  <script>
-    btnOpen.onclick = function () {
-      navMenu.classList.toggle('show-menu')
-    }
-  </script>
-</body>
+        </section>
+    </main>
+    <footer class="footy">
+      <p>&copy; Portafolio de Gustavo Luque 2024. Todos los derechos reservados.</small></p>
+    </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed('.hero-description span', {
+        strings: [
+          '<b>Front-end</b>', '<b>Back-end</b>', '<b>Full-stack</b>'
+        ],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+        cursorChar: '|',
+      })
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js'></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        dragEvents: true,
+        loop: true,
+        autoHeight: false,
+        centeredSlides: true,
+        slidesPerView: 1,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          }
+        },
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      })
+    </script>
+
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
