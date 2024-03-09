@@ -24,7 +24,7 @@ const skills = [
   },
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068793/react_ufwyeu.svg',
-    name: 'JavaScript',
+    name: 'React',
   }
 ]
 
