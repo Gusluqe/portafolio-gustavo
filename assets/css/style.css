@@ -160,8 +160,8 @@
       transition: left .5s ease-in-out;
     }
     .img-center {
-      max-width: 250px;
-      margin-top: 120px;
+      max-width: 200px;
+      margin-top: 100px;
       margin-left: 100px;
     }
     .img-center:hover {
@@ -181,7 +181,7 @@
     }
         
     .hero {
-      margin-top: 150px;
+      margin-top: 210px;
     }
     
     .section-about {
