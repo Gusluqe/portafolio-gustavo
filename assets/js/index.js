@@ -4,11 +4,11 @@ const skillsTech = document.querySelector('.skills-tech')
 const skills = [
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/bash_herg5r.svg',
-    name: 'Bash',
+    name: 'BASH',
   },
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068793/vsc_m9yr7b.svg',
-    name: 'VS Code',
+    name: 'VS CODE',
   },
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/html_q6pvb3.svg',
@@ -20,11 +20,39 @@ const skills = [
   },
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068791/javascript_u1zqf9.svg',
-    name: 'JavaScript',
+    name: 'JAVASCRIPT',
   },
   {
     path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1705068793/react_ufwyeu.svg',
-    name: 'React',
+    name: 'REACT',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715125614/pngwing.com_u1n0ff.png',
+    name: 'NPM',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715126845/pngwing.com_4_xd8c7k.png',
+    name: 'NODE.JS',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715125373/tailwind-css-logo-24_f921tf.png',
+    name: 'TAILWIND',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715125758/pngegg_fpc4zr.png',
+    name: 'GIT',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715125844/pngwing.com_2_h3i32t.png',
+    name: 'POSTRGRES',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715125980/pngwing.com_3_zltarm.png',
+    name: 'EXPRESS',
+  },
+  {
+    path: 'https://res.cloudinary.com/dfc7m5ola/image/upload/v1715126047/klipartz.com_oznl55.png',
+    name: 'SEQUELIZE',
   }
 ]
 
