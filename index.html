@@ -8,6 +8,9 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css'>
     <link rel="shortcut icon" href="https://res.cloudinary.com/dfc7m5ola/image/upload/v1703774278/foto_g_t7p7cr.jpg">
     <link rel='stylesheet' href='assets/css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -26,7 +29,7 @@
 
           <ul class="menu-list">
             <li class="list-item active">
-              <a class="list-link" href='#hero'>Inicio</a>
+              <a class="list-link" href='/'>Inicio</a>
             </li>
             <li class="list-item">
               <a class="list-link" href='#about'>Sobre mi</a>
@@ -74,12 +77,7 @@
         <h2 class='section-title'>  Sobre Mi > </h2>
         <div class='container'>
           <div class='about-info'>
-            <p>> Bienvenido a mi portafolio, me considero una persona pro-activa,
-              Me gusta mucho viajar, Me gusta el El desarrollo web,
-              lo cual es un campo dinámico y en constante evolución que se ocupa de la
-              creación y mantenimiento de sitios y aplicaciones web.
-              además tengo conocimientos de redes y hardware y software
-              Me gusta mucho la tecnologia y todo lo relacionado a ella.</p>
+            <p>> Bienvenido a mi portafolio, Como desarrollador web full stack, mi enfoque abarca desde el backend hasta el frontend, donde diseño y construyo experiencias digitales excepcionales. En el backend, me dedico a crear bases sólidas y eficientes, priorizando la seguridad y la escalabilidad en cada aspecto, desde la gestión de bases de datos hasta la implementación de API. Por otro lado, en el frontend, mi atención se centra en la experiencia del usuario, asegurándome de que cada detalle visual y funcional esté diseñado para cautivar y deleitar a los visitantes del sitio web. Mi compromiso con la excelencia y la dedicación a cada detalle se reflejan en mi trabajo, donde busco constantemente la perfección en cada aspecto del desarrollo web, desde el diseño hasta la implementación.</p>
 
             <p>> Busco pertenecer a una empresa que me otrogue
               Estabilidad Laboral, Estudios para perfeccionarme aún mas y Seguridad economica.</p>
@@ -139,7 +137,7 @@
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
-                <span>TRABAJO EN EQUIPO/span>
+                <span>TRABAJO EN EQUIPO</span>
               </li>
               <li class='skill-item'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -180,15 +178,15 @@
       
       <!-- GALERIA HOME INFORMACION IMPORTANTE    -->
       <center>
-      <section class='services'> 
+      <section id="proyects" class='services'> 
         <h2 class='section-title'>Proyectos > </h2>          
         <div class="div9">                 
         </div>      
         <div class='services-container'>        
           <article class='services-card'>
-            <div class='services-img'>
+            <a target="_blank" href="https://strong-fenglisu-9ca019.netlify.app/" class='services-img'>
               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715129723/galletas_de_la_fortuna_rvvzuq.png' alt='img' width="200">
-            </div>
+            </>
             <div class='services-info'>
               <h3 class="h3">Galletas de la fortuna App</h3>
               
@@ -197,82 +195,104 @@
                 Tech stack : HTML , CSS, ReactJS.              
               </p>
               <div class="enlace">
-                <a target="_blank" class='bx bx-link-alt' href="https://strong-fenglisu-9ca019.netlify.app/"> ←</a>
+                <a target="_blank" class='bx bx-link-alt' href="https://strong-fenglisu-9ca019.netlify.app/"></a>
               </div>
+              <button >
+                <a class='bx bxl-github' href='https://github.com/Gusluqe/proyecto-fortuna.git' target="_blank" rel="noopener noreferrer"></a>
+              </button>
             </div>
           </article>
   
           <article class='services-card'>
-            <div class='services-img'>
+            <a target="_blank" href="https://weather-aplication-local.netlify.app/" class='services-img'>
               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715137290/app_clima_ogjm7h.png' alt='img' width="100">
-            </div>
+            </>
             <div class='services-info'>
               <h3 class="h3">Weather App</h3>
               <p class="p1">Aplicación para conocer el clima en cualquier parte del mundo , así como también nos da el pronóstico en la ubicación actual.</p>
               <p>Tech stack : HTML , CSS, ReactJS, Axios, Tailwind.</p>
-              <a target="_blank" class='bx bx-link-alt' href="https://weather-aplication-local.netlify.app/"> ←</a>
+              <a target="_blank" class='bx bx-link-alt' href="https://weather-aplication-local.netlify.app/"></a>
             </div>
+            <button >
+              <a class='bx bxl-github' href='https://github.com/Gusluqe/aplicacion-clima.git' target="_blank" rel="noopener noreferrer"></a>
+            </button>
           </article>  
           
           <article class='services-card'>
+            <a target="_blank" href="https://rick-ad-morty.netlify.app/">
             <div class='services-img'>
-              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715129724/rick_and_morty_ve0t2b.png' alt='img' width="200">
-            </div>
+              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715295175/rick_and_morty_vqtjck.png' alt='img' width="200">
+            </div></a>
             <div class='services-info'>
               <h3 class="h3">Rick & Morty App</h3>
               <p class="p1">Aplicación sobre Rick & Morty, en el cual puedes ver información sobre las locaciones de la serie y cada uno de sus residentes.</p>
               <p>Tech stack : HTML , CSS, ReactJS, Axios, Tailwind.</p>
-              <a target="_blank" class='bx bx-link-alt' href="https://rick-ad-morty.netlify.app/"> ←</a>
+              <a target="_blank" class='bx bx-link-alt' href="https://rick-ad-morty.netlify.app/"></a>
             </div>
+            <button >
+              <a class='bx bxl-github' href='https://github.com/Gusluqe/rick-and-morty.git' target="_blank" rel="noopener noreferrer"></a>
+            </button>
           </article>  
 
           <article class='services-card'>
+            <a target="_blank" href="https://poke-mon-pokedex.netlify.app/">
             <div class='services-img'>
-              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715134268/ecommerce22_soheo7.png' alt='img' width="200">
-            </div>
+              <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715296156/poke2_xy5b3z.png' alt='img' width="200">
+            </div></a>
             <div class='services-info'>
               <h3 class="h3">Pokedex App</h3>
               <p class="p1">Aplicación sobre pokemon, en el cual se puede ver información sobre los distintos tipos de pokemon, así como buscar por tipos y nombres.</p>
               <p>Tech stack : HTML , CSS, ReactJS, Redux, React Router DOM, Axios, Tailwind.
               </p>
-              <a target="_blank" class='bx bx-link-alt' href="https://poke-mon-pokedex.netlify.app/"> ←</a>
+              <a target="_blank" class='bx bx-link-alt' href="https://poke-mon-pokedex.netlify.app/"></a>
               
             </div>
+            <button >
+              <a class='bx bxl-github' href='https://github.com/Gusluqe/pokedex.git' target="_blank" rel="noopener noreferrer"></a>
+            </button>
           </article>  
 
           <article class='services-card'>
+            <a target="_blank" href="https://entregable-n-4.netlify.app/"">
             <div class='services-img'>
               <img  src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715131169/crud2_dk9gv2.png' alt='img' width="200">
-            </div>
+            </div></a>
             <div class='services-info'>
               <h3 class="h3">SISTEMA CRUD</h3>
               <p class="p1">Aplicación de un sistema CRUD para obtener, crear, actualizar y eliminar usuarios.</p>
               <p>Tech stack : HTML , CSS, ReactJS, React Hook Form, Axios, Tailwind.</p>
-              <a target="_blank" class='bx bx-link-alt' href="https://entregable-n-4.netlify.app/"> ←</a>
+              <a target="_blank" class='bx bx-link-alt' href="https://entregable-n-4.netlify.app/"></a>
               
             </div>
+            <button >
+              <a class='bx bxl-github' href='https://github.com/Gusluqe/entregable4.git' target="_blank" rel="noopener noreferrer"></a>
+            </button>
           </article> 
           
           <article class='services-card'>
+            <a target="_blank" href="https://e-commerss.netlify.app/">
             <div class='services-img'>
               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1715137588/ecommerce_este_hmjjzc.png' alt='img' width="200">
-            </div>
+            </div></a>
             <div class='services-info'>
               <h3 class="h3">E-COMMERCE</h3>
-              <p class="p1">Una aplicación de una E-Commerce funcional, con login, y carrito de compras
+              <p class="p1">Aplicación de una E-Commerce funcional, con login, y carrito de compras
                 Diseño y desarrollo de versiones web utilizando API ,
-                El backend se implementó como una API basada en React, Html, Css, Javascript;
-                La aplicación fue probada por estudiantes de primer año en un curso de introducción a la programación.</p>
+                El backend se implementó como una API basada en React, Html, Css, Javascript;</p>
               <p>Tech stack : HTML , CSS, ReactJS, React Hook Form, Axios, Tailwind, Api.</p>
-              <a target="_blank" class='bx bx-link-alt' href="https://e-commerss.netlify.app/"> ←</a>
+              <a target="_blank" class='bx bx-link-alt' href="https://e-commerss.netlify.app/"></a>
               
             </div>
+            <button >
+              <a class='bx bxl-github' href='https://github.com/Gusluqe/E-commers.git' target="_blank" rel="noopener noreferrer"></a>
+            </button>
           </article> 
   
           <article class='services-card'>
+            <a target="_blank" href="https://lofigenerator.com/">
             <div class='services-img'>
               <img src='https://res.cloudinary.com/dfc7m5ola/image/upload/v1703871670/1536875829_1536875809___original_drawn_by_waneella__c63cae1344766f14d9d184e5aafed065_v5dapu.gif' alt='img' width="200">
-            </div>
+            </div></a>
             <div class='services-info'>
               <h3 class="h3">Responsabilidad</h3>
               <p class="p1">Soy muy responsable en el desarrollo web, 
