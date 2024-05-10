@@ -103,7 +103,7 @@
     margin-left: 1190px;
   }
 
-  .img-center:ahover {
+  .img-center:hover {
     transform:scale(1.2);
   }
 
@@ -134,8 +134,10 @@
   }
   
   .logo {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
+    font-family: "Silkscreen";
+    color: var(--primary-color);
   }
   
   .logo span {
